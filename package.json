@@ -1,0 +1,17 @@
+{
+  "name": "dacoin",
+  "version": "1.0.0",
+  "description": "This is the website for a new cryptocurrency called DaCoin",
+  "main": "index.js",
+  "scripts": {
+    "test": "dacoin"
+  },
+  "keywords": [
+    "dacoin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
