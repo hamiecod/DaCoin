@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "dacoin",
-    "scss": "node-sass --watch src/scss -o static/css"
+    "scss": "node-sass --output-style expanded src/scss/main.scss > static/css/main.css"
   },
   "keywords": [
     "dacoin"
