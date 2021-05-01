@@ -4,3 +4,11 @@
     margin: 0rem;
     overflow-x: hidden;
 }
+
+$main-color: #ffffff;
+$secondary-color: #a8b0ee;
+$accent-color: #ff86cf;
+
+@mixin pink-gradient{
+    background: linear-gradient(to right, #f96ec6, #d431a6);
+}

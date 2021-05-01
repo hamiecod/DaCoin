@@ -4,7 +4,7 @@ header{
         display: grid;
         flex-direction: row;
         grid-template-columns: 1fr 1fr;
-        margin-top: 0.4143rem;
+        margin-top: 0.43143rem;
         &-logo{
             width: 45vw;
             display: flex;
@@ -25,7 +25,7 @@ header{
             }
             &__link{
                 font-family: 'PT Sans';
-                color: white;
+                color: $main-color;
                 text-decoration: none;
                 font-size: 0.844rem;
             }

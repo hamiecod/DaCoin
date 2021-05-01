@@ -1,7 +1,46 @@
 body{
-    min-height: 100vh;
-    min-width: 100vw;
-    background: 
-    url('/static/img/landing/space.png') 
-    no-repeat center center/cover;
+    height: 200vh;
+    width: 100vw;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        height: 100vh;
+        width: 100vw;
+        background: 
+        url('/static/img/landing/space.png') 
+        no-repeat center center/cover;
+        z-index: -3;
+    }
+}
+
+.landing{
+    &-heading{
+        color: $main-color;
+        font-family: "Poppins-bold";
+        text-align: center;
+        margin-top: 4.2rem;
+        font-size: 2rem;
+    }
+    &-button{
+        @include pink-gradient;
+        width: 9rem;
+        height: 2.25rem;
+        // padding: 0.34rem 0.41rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.31rem;
+        margin: 4.3rem auto;
+        &__link{
+            color: $main-color;
+            text-decoration: none;
+            font-family: 'PT Sans';
+        }
+        &__icon{
+            margin-left: 0.37rem;
+            color: $main-color;
+        }
+    }
 }

@@ -1,4 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@700&display=swap");
+@font-face {
+  font-family: 'Poppins';
+  src: url("/static/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Poppins-bold';
+  src: url("/static/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("/static/fonts/PTSans.ttf");
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -20,7 +35,7 @@ header .navbar {
           flex-direction: row;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  margin-top: 0.4143rem;
+  margin-top: 0.43143rem;
 }
 
 header .navbar-logo {
@@ -60,14 +75,61 @@ header .navbar-list__item {
 
 header .navbar-list__link {
   font-family: 'PT Sans';
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-size: 0.844rem;
 }
 
 body {
-  min-height: 100vh;
-  min-width: 100vw;
+  height: 200vh;
+  width: 100vw;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  height: 100vh;
+  width: 100vw;
   background: url("/static/img/landing/space.png") no-repeat center center/cover;
+  z-index: -3;
+}
+
+.landing-heading {
+  color: #ffffff;
+  font-family: "Poppins-bold";
+  text-align: center;
+  margin-top: 4.2rem;
+  font-size: 2rem;
+}
+
+.landing-button {
+  background: -webkit-gradient(linear, left top, right top, from(#f96ec6), to(#d431a6));
+  background: linear-gradient(to right, #f96ec6, #d431a6);
+  width: 9rem;
+  height: 2.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.31rem;
+  margin: 4.3rem auto;
+}
+
+.landing-button__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'PT Sans';
+}
+
+.landing-button__icon {
+  margin-left: 0.37rem;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
